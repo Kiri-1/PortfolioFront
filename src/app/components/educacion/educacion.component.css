@@ -1,0 +1,26 @@
+.row{
+    padding:2rem;
+    width: auto;
+}
+
+div{
+    background: #a6e6eb ;
+}
+
+#educ{
+        font: 110% Verdana,sans-serif;
+        font-weight: bold;
+        font-weight: 600;
+        font-size: 60%;
+        background-color: #91d8df; 
+        color: #000000;
+}
+#infoedu{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 120%;
+    line-height: normal;
+    font-family: Verdana,sans-serif;
+}

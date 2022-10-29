@@ -1,0 +1,28 @@
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Imagen</label>
+                    <input type="file" class="form-control" alife-file-to-base64 (onFileChanged)="upImagen($event)" id="imagen" name="imagen" [(ngModel)]="persona.imagen" accept="image/*" required>
+                </div>
+                <button class="btn btn-primary" (click)="onUpdate()">
+                    Editar persona
+                </button>
+                <!-- <button routerLink="/home">CANCELAR</button> -->
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<section class="vh-100 newacerca-custom">
+    <div class="container">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreEd">Nombre</label>
+                        <input type="text" class="form-control" id="nombreEd" name="nombre" [(ngModel)]="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="" name="apellido" [(ngModel)]="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagen">Imagen</label>
+                        <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="imagen" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        Agregar persona
+                    </button>
+                    <!-- <button routerLink="/home">CANCELAR</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>

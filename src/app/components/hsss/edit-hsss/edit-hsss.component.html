@@ -1,0 +1,23 @@
+<div class="container" *ngIf="tecnologia">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreT">Nombre de la tecnologia</label>
+                    <input type="text" class="form-control" id="nombreT" name="nombreT" [(ngModel)]="tecnologia.nombreT" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionT">Descripcion de la tecnologia</label>
+                    <input type="text" class="form-control" id="descripcionT" name="descripcionT" [(ngModel)]="tecnologia.descripcionT" required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeT">Porsentaje de la tecnologia</label>
+                    <input type="text" class="form-control" id="porcentajeT" name="porcentajeT" [(ngModel)]="tecnologia.porcentajeT" required>
+                </div>
+                <button class="btn btn-primary" click="onUpdate()">
+                    Editar tecnologia
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
