@@ -18,7 +18,7 @@
                     <label for="imagen">Imagen</label>
                     <input type="file" class="form-control" alife-file-to-base64 (onFileChanged)="upImagen($event)" id="imagen" name="imagen" [(ngModel)]="persona.imagen" accept="image/*" required>
                 </div>
-                <button class="btn btn-primary" (click)="onUpdate()">
+                <button class="btn btn-primary" click="onUpdate()">
                     Editar persona
                 </button>
                 <!-- <button routerLink="/home">CANCELAR</button> -->
